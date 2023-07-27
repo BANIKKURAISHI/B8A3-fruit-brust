@@ -1,0 +1,35 @@
+.first {
+    transform: translate(400px, -100px);
+    gap: 35px;
+}
+
+.third{
+    background-image: url(images/banner1.png);
+    background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+
+.image2{
+width: 200px;
+height: 200px;
+}
+
+.fa-brands{
+    width: 60px;
+    height: 60px;
+padding: 20px;
+gap: 30px;
+}
+.fa-people-line ,.fa-gift,.fa-regular ,.fa-ice-cream ,.fa-apple{
+    width: 80px;
+    height: 80px;
+    padding: 30px;
+gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+     background-image: none;
+    }
+  }
