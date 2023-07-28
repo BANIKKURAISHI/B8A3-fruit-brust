@@ -42,39 +42,53 @@ tailwind.config = {
 </head>
 <body class="font-lato">
     <!--Nav bar section is start here -->
-    <nav>
-        <div class="flex flex-column  lg:flex-row bg-red-400 rounded-3xl m-5 justify-between" >
-            <div class="flex justify-center  flex-column lg:flex-row mx-7 my-7">
-                <ul class="text-center text-lg text-white ">
-                    <a href="#" class="font-medium text-white-500 m-8">Home</a>
-                    <a href="#" class="font-medium text-white-500 m-8" >About Us</a>
-                    <a href="#" class="font-medium text-white-500 m-8">Shop</a>
-                    <a href="#" class="font-medium text-white-500 m-8">All Fruits</a>
-                </ul>
-            </div>
-            <div class="flex m-6">
-                <img src="images/logo.png" alt="logo">
-                <h1 class="m-8 text-4xl text-white">Fruit Burst</h1>
-            </div>
-            <div class=" justify-center p-4">
-                <input class=" flex-1 w-96 h-12 m-8 pl-8 rounded-3xl" type="text" placeholder="Search here..." >
-               <button class="btn ">
-                <i class="fa fa-search"></i>
-               </button>
-              
-            </div>
+
+  
+    <nav class="navbar">
+      <div class="   flex flex-row  rounded-3xl m-5 justify-between w-full bg-white    lg:bg-red-400" >
+        <div class="flex hidden md:inline-flex flex-row mx-7 my-7  ">
+           <ul class=" text-center text-lg text-white p-10  lg: ">
+            <a href="#" class="font-medium text-white-500 m-8 ">Home</a>
+            <a href="#" class="font-medium text-white-500 m-8 " >About Us</a>
+            <a href="#" class="font-medium text-white-500 m-8">Shop</a>
+            <a href="#" class="font-medium text-white-500 m-8 ">All Fruits</a>
+        </ul>
         </div>
+
+        <div class=" flex   lg: justify-center mt-8 mb-7 p-2 ">
+          <img src="images/logo.png" alt="logo">
+             <h1 class="flex-1 flex-row  inline-flex text-black  text-2xl lg: text-4xl text-white m-8 ">Fruit Burst</h1>
+          </div>
+
+
+            <div class="  lg: justify-center p-4 ">
+                <input class=" flex-1 hidden md:inline-flex w-96 h-12 mt-8 mb-7 pl-8 rounded-3xl" type="text" placeholder="Search here..." >
+                <i class=" hidden md:inline-flex fa fa-search  "></i>
+               </div>
+        </div>
+
+        <label class="btn btn-circle swap swap-rotate lg:hidden">
+  
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+          
+          <!-- hamburger icon -->
+          <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+          
+          <!-- close icon -->
+          <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+          
     </nav>
 
 
 
     <!--Main section is start here-->
   <main>
-    <section class="section-2 mx-5  ">
-        <div class="carousel  mt-10 ">
-            <div id="slide1" class="carousel-item relative w-full">
+    <section class="section-2 mx-1  lg:mx-5   ">
+        <div class="carousel mt-2 inline-flex  lg: mt-10 ">
+            <div id="slide1" class=" carousel-item   relative w-full ">
               <img src="/images/banner1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <div class="absolute flex lg: justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                  <a href="#slide4" class="btn btn-circle">❮</a>
                    <div class="text-center">
                    <h1 class="text-white text-6xl font-extrabold">Exotic tastes at your<br>doorstep</h1> 
@@ -135,7 +149,7 @@ tailwind.config = {
             
            </section>
 
-           <div class=" first flex  flex-col flex-warp mt--45 justify-center shadow-md bg-white  w-3/5 p-10 lg:flex-row ">
+           <div class="hidden p-1 mt-3 w-50 lg:first flex  flex-col flex-warp mt--45 justify-center shadow-md bg-white  w-3/5 p-10 lg:flex-row ">
             <img src="images/fruit1.png" alt="logo"  >
             <img src="images/fruit2.png " alt="logo" >
             <img src="images/fruit3.png" alt="logo">
@@ -144,14 +158,14 @@ tailwind.config = {
             
              </div>
 
-<section class="section-3 flex flex-1 m-5 mb-8">
-    <div class="flex-1 ">
-      <h1 class="text-lg font-extrabold  w-1/4 shadow rounded-2xl bg-white  p-4  ">Deal of the day</h1>
-      <p class="text-base font-normal">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
+<section class="section-3  m-1 mb-2 lg:flex flex-row m-5 mb-8">
+    <div class="flex flex-col mt-5  mb-3 lg: flex-row flex-1  flex-1">
+      <h1 class="text-center   lg:text-lg font-extrabold  w-1/4 ">Deal of the day</h1>
+      <p class=" mx-30 my-30 mt-7 mb-15 lg:text-base font-normal">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
     </div>
    
     <div>
-      <div class="flex flex-1 gap-5 ">
+      <div class="  gap-1   grid grid-cols-1 m-2   lg: flex-1 grid-cols-4  gap-5 ">
         <div>
           <span class="countdown font-mono text-4xl bg-white shadow rounded-2xl p-4">
             <span style="--value:15;"></span>
@@ -182,7 +196,7 @@ tailwind.config = {
     </div>
 </section>
 
-<section class="flex gap-5 justify-around mt-15">
+<section class="flex flex-col m-3 lg:flex-row gap-3 justify-around mt-15">
   <div class="card w-96 bg-base-100 shadow-xl">
     <figure class="px-10 pt-10">
       <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
@@ -191,7 +205,7 @@ tailwind.config = {
       <h2 class="card-title">12.90$ - 18.85$</h2>
       <p>Apples</p>
       
-      <div class="rating rating-lg rating-half">
+      <div class="rating rating-lg rating-half ">
         <input type="radio" name="rating-10" class="rating-hidden" />
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
@@ -205,9 +219,38 @@ tailwind.config = {
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
       </div>
    
-        <div class="card-actions">
-        <button class="btn btn-primary bg-red-400 ">Details
-        </button>
+        
+        <details class="dropdown mb-8 ">
+          <summary class="m-1  btn btn-primary bg-red-400">Details</summary>
+          <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+            <div class="card w-96  bg-base-100 ">
+              <figure class="px-10 pt-10">
+                <img src="/images/fruit6.png" alt="logo" class="rounded-xl " />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">12.90$ - 18.85$</h2>
+                <p>Apples</p>
+                
+                <div class="rating rating-lg rating-half ">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="flex gap-1 p-1 m-1 lg: gap-6 p-3 m-3">
+                  <button class="btn">Close</button>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+                
+          </ul>
+        </details>
       </div>
     </div>
   </div>
@@ -219,8 +262,8 @@ tailwind.config = {
       <h2 class="card-title">12.90$ - 18.85$</h2>
       <p>Orange </p>
       
-      <div class="rating rating-lg rating-half">
-        <input type="radio" name="rating-10" class="rating-hidden" />
+      <div class="rating rating-lg rating-half ">
+        <input type="radio" name="rating-10" class="rating-hidden " />
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
@@ -231,10 +274,42 @@ tailwind.config = {
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+        </div>
+        <details class="dropdown mb-12 ">
+          
+          <summary class="m-1 btn btn-primary bg-red-400">Details</summary>
+          <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+            <div class="card w-96 bg-base-100 ">
+              <figure class="px-10 pt-10">
+                <img src="/images/fruit7.png" alt="logo" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">12.90$ - 18.85$</h2>
+                <p>Orange</p>
+                
+                <div class="rating rating-lg rating-half ">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="flex gap-1 p-1 m-1 lg:  gap-6 p-3 m-3">
+                  <button class="btn">Close</button>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+                
+          </ul>
+        </details>
       </div>
-        <div class="card-actions">
-        <button class="btn btn-primary bg-red-400">Details</button>
-      </div>
+    </div>
+  </div>
     </div>
   </div>
 
@@ -248,7 +323,7 @@ tailwind.config = {
       <h2 class="card-title">12.90$ - 18.85$</h2>
       <p>Red Dragon</p>
       
-      <div class="rating rating-lg rating-half">
+      <div class="rating rating-lg rating-half ">
         <input type="radio" name="rating-10" class="rating-hidden" />
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
@@ -261,9 +336,38 @@ tailwind.config = {
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
         <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
       </div>
-        <div class="card-actions">
-        <button class="btn btn-primary bg-red-400">Details</button>
-      </div>
+      <details class="dropdown mb-12 ">
+          
+        <summary class="m-1 btn btn-primary bg-red-400">Details</summary>
+        <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+          <div class="card w-96 bg-base-100 ">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit8.png" alt="logo" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Red Dragon</p>
+              
+              <div class="rating rating-lg rating-half ">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+              </div>
+              <div class="flex gap-1 p-1 m-1 lg:  gap-6 p-3 m-3">
+                <button class="btn">Close</button>
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+              
+        </ul>
+      </details>
     </div>
   </div>
 
@@ -277,7 +381,7 @@ tailwind.config = {
       <h2 class="card-title">12.90$ - 18.85$</h2>
       <p>Banana</p>
       
-        <div class="rating rating-lg rating-half">
+        <div class="rating rating-lg rating-half ">
           <input type="radio" name="rating-10" class="rating-hidden" />
           <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
           <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
@@ -290,9 +394,38 @@ tailwind.config = {
           <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
           <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
         </div>
-        <div class="card-actions">
-        <button class="btn btn-primary bg-red-400">Details</button>
-      </div>
+        <details class="dropdown mb-12 ">
+          
+          <summary class="m-1 btn btn-primary bg-red-400">Details</summary>
+          <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+            <div class="card w-96 bg-base-100 ">
+              <figure class="px-10 pt-10">
+                <img src="/images/fruit9.png" alt="logo" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">12.90$ - 18.85$</h2>
+                <p>Banana</p>
+                
+                <div class="rating rating-lg rating-half ">
+                  <input type="radio" name="rating-10" class="rating-hidden " />
+                  <input type="radio" name="rating-10" class="bg-green-500  mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500  mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-green-500  mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500  mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500  mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500  mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500  mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-green-500  mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-green-500  mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="flex gap-1 p-1 m-1 lg:  gap-6 p-3 m-3">
+                  <button class="btn">Close</button>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+                
+          </ul>
+        </details>
     </div>
   </div>
 </section>
@@ -312,9 +445,9 @@ tailwind.config = {
            </p>
           
       </div>
-        <section class="flex flex-col lg:grid grid-cols-4 items-center justify-center al mb-40 p-25">
+        <section class=" flex flex-col m-5 p-5 lg:grid grid-cols-4 items-center justify-center al mb-40 p-25">
           <div class=" flex flex-col lg: flex-row m-10">
-            <div class=" gap-3 pb-10 ml-20">
+            <div class="gap-1 p-2 m-2 lg: gap-3 pb-10 ml-20">
                <img src="images/member1.png" alt="logo" class=" image2 rounded-3xl  ">
                <h3 class="text-white text-4xl">Awlad Hossain</h3>
                <br>
@@ -328,7 +461,7 @@ tailwind.config = {
 
 
            <div class=" flex   m-10">
-            <div class=" gap-3 pb-10 ml-20">
+            <div class=" gap-1 p-2 m-2  lg: gap-3 pb-10 ml-20">
                <img src="images/member2.png" alt="logo" class=" image2 rounded-3xl  ">
                <h3 class="text-white text-4xl">Safia Chowdhury</h3>
                <br>
@@ -341,7 +474,7 @@ tailwind.config = {
            </div>
 
            <div class=" flex  m-10 ">
-            <div class=" gap-3 pb-10 ml-20">
+            <div class="gap-1 p-2 m-2  lg: gap-3 pb-10 ml-20">
                <img src="images/member3.png" alt="logo" class=" image2 rounded-3xl  ">
                <h3 class="text-white text-4xl">Rokib Hossain</h3>
                <br>
@@ -354,7 +487,7 @@ tailwind.config = {
            </div>
 
            <div class=" flex  m-10">
-            <div class=" gap-3 pb-10 ml-20">
+            <div class="gap-1 p-2 m-2  lg: gap-3 pb-10 ml-20">
                <img src="images/member4.png" alt="logo" class=" image2 rounded-3xl  ">
                <h3 class="text-white text-4xl">Chaity</h3>
                <br>
@@ -372,14 +505,14 @@ tailwind.config = {
     <section  >
       <div>
         <div class="text-center ">
-          <h1 class="text-6xl font-extrabold">Why Choose Us</h1>
-          <p class="text-4xl font-medium m-10" >Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
+          <h1 class="text-4xl font-medium lg: text-6xl font-extrabold">Why Choose Us</h1>
+          <p class="text-4xl font-medium m-2 lg: m-10" >Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
       </div>
       <section class="grid grid-cols-1 lg:grid-cols-3">
       <div>
         <div >
-                <div class="flex m-4">
+                <div class="flex justify-center m-1 lg: m-4">
                <div>
                 <i class="bg-slate-200 rounded-3xl fa-solid fa-people-line"></i>
                </div>
@@ -392,7 +525,7 @@ tailwind.config = {
     
                </div>
         
-     <div class="flex m-4">
+     <div class="flex justify-center m-1 lg: m-4">
             <div >
               <i class="bg-slate-200 rounded-3xl fa-regular fa-heart"></i>
              </div>
@@ -406,7 +539,7 @@ tailwind.config = {
             
     
     
-            <div class="flex m-4">
+            <div class="flex justify-center m-1 lg: m-4">
             <div>
               <i class="bg-slate-200 rounded-3xl fa-solid fa-gift"></i>
              </div>
@@ -435,7 +568,7 @@ tailwind.config = {
     <div>
        <div>
 
-        <div class="flex m-4 ">
+        <div class="flex justify-center m-1 lg: m-4 ">
     
           <div>
               <h1 class="text-5xl text-black">TIntegrated Supplier</h1>
@@ -451,7 +584,7 @@ tailwind.config = {
   
   
   
-  <div class="flex m-4">
+  <div class="flex justify-center m-1 lg: m-4">
      
        <div>
           <h1 class="text-5xl text-black">Sustainable Practice</h1>
@@ -469,7 +602,7 @@ tailwind.config = {
 
   
   
-      <div class="flex m-4 ">
+      <div class="flex justify-center m-1 lg: m-4 ">
       
        <div>
           <h1 class="text-5xl text-black">The Benefits Only</h1>
@@ -502,7 +635,7 @@ tailwind.config = {
 
 <footer class="bg-black text-center">
   <nav>
-                  <div class=" flex mt-10 p-2 p-10 justify-center">
+                  <div class=" flex m-2 p-2 lg: mt-10 p-2 p-10 justify-center">
                            <img src="images/logo.png" alt="logo">
                               <h1 class="m-8 text-4xl text-white">Fruit Burst</h1>
                     </div>
@@ -510,17 +643,16 @@ tailwind.config = {
 
     
         
-            <ul class="flex flex-col justify-center lg:flex-row text-white">
-                <a href="#" class="font-medium text-white-500 m-8">Home</a>
-                <a href="#" class="font-medium text-white-500 m-8" >About Us</a>
-                <a href="#" class="font-medium text-white-500 m-8">Shop</a>
-                <a href="#" class="font-medium text-white-500 m-8">All Fruits</a>
-                <a href="#" class="font-medium text-white-500 m-8">Support</a>
-                <a href="#" class="font-medium text-white-500 m-8">My Account</a>
+            <ul class="flex items-center flex-row m-1  justify-center lg:flex-row text-white">
+                <a href="#" class="font-medium text-white-500  lg: m-8">Home</a>
+                <a href="#" class="font-medium text-white-500  lg: m-8">Shop</a>
+                <a href="#" class="font-medium text-white-500  lg:m-8">All Fruits</a>
+                <a href="#" class="font-medium text-white-500  lg: m-8">Support</a>
+                <a href="#" class="font-medium text-white-500  lg:m-8">My Account</a>
             </ul>
         
-      <div class=" flex text-center justify-center flex-col lg :flex-row text-4xl p-10 ">
-        <div class="flex flex-col justify-center text-center lg:flex-row p-8 ">
+      <div class=" flex flex-row text-center items-center  justify-center   lg :flex-row text-4xl  ">
+        <div class="flex flex-row items-center justify-center text-center text-white lg:flex-row p-8  ">
           <i class="fa-brands fa-twitter mr-4 "></i>
           <i class="fab fa-facebook-f"></i>
           <i class="fa-brands fa-youtube"></i>
